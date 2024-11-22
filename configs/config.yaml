@@ -1,0 +1,15 @@
+data:
+  raw_path: "data/raw/dataset.csv"
+  processed_path: "data/processed/"
+models:
+  dir: "models/"
+  model_file: "final_model.pth"
+  vectorizer_file: "vectorizer.pkl"
+  label_encoder_file: "label_encoder.pkl"
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 10
+deployment:
+  device: "cpu"
+
