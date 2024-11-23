@@ -178,15 +178,7 @@ class SimpleTextClassifier(nn.Module):
 ## Results
 
 ### Performance Metrics
-- Accuracy: XX%
-- Precision: XX%
-- Recall: XX%
-- F1-Score: XX%
-
-### Privacy Guarantees
-- Epsilon value: X.XX
-- Delta value: X.XX
-- Privacy loss bounds
+- Accuracy: 94.45%
 
 ## Testing
 
