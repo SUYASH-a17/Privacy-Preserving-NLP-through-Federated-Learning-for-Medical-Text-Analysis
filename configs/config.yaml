@@ -2,7 +2,7 @@ data:
   raw_path: "data/raw/dataset.csv"
   processed_path: "data/processed/"
 models:
-  dir: "/Users/ihack-pc/Downloads/Projects/Privacy-Preserving-NLP-through-Federated-learning-for-Medical-text-analysis/Jupyter Notebook/archive/federated_training_20241110_142938/"
+  dir: "/Users/ihack-pc/Desktop/NLP Project Final/NLP Project/models"
   model_file: "final_model.pth"
   vectorizer_file: "vectorizer.pkl"
   label_encoder_file: "label_encoder.pkl"
