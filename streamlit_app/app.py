@@ -97,7 +97,7 @@ def main():
 
     # Footer
     st.markdown("---")
-    st.markdown("Developed by: **Red Coder !!**")
+    st.markdown("Developed by: **Your Name**")
     st.markdown(f"Last updated: {datetime.now().strftime('%Y-%m-%d')}")
 
 if __name__ == "__main__":
