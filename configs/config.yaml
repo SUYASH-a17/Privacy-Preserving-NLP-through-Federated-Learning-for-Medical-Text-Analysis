@@ -1,8 +1,8 @@
 data:
-  raw_path: "data/raw/dataset.csv"
+  raw_path: "data/raw/meta.csv"
   processed_path: "data/processed/"
 models:
-  dir: "/Users/ihack-pc/Desktop/NLP Project Final/NLP Project/models"
+  dir: "models/"
   model_file: "final_model.pth"
   vectorizer_file: "vectorizer.pkl"
   label_encoder_file: "label_encoder.pkl"
@@ -11,5 +11,5 @@ training:
   learning_rate: 0.001
   num_epochs: 10
 deployment:
-  device: "cpu"
+  device: "CPU"
 
