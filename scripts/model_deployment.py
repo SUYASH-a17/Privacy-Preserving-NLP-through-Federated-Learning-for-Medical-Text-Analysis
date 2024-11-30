@@ -121,7 +121,6 @@ class ModelDeployment:
             "longevity", "fertility", "ivf", "pregnancy", "maternal health",
             "childbirth", "contraception", "abortion", "sexual health", "menstrual",
             "pcos", "std", "sti", "prenatal care", "postpartum"
-            # Add any additional medical keywords here
         ])
         text_lower = text.lower()
         return any(keyword in text_lower for keyword in medical_keywords)
