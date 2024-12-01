@@ -227,4 +227,4 @@ If you use this project in your research, please cite:
 ## Contact
 - Name - Bhushan Asati, Suyash Madhavi 
 - Project Link: [[Privacy-Preserving NLP through Federated Learning for Medical Text Analysis](https://github.com/bhushanasati25/Privacy-Preserving-NLP-through-Federated-Learning-for-Medical-Text-Analysis.git)]
-- Project Link: [[Deployment Link(https://redcodernlpproject.streamlit.app/)]
+- Deployment Link: [[Deployment Link(https://redcodernlpproject.streamlit.app/)]
