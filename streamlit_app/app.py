@@ -108,38 +108,136 @@ def main():
             - Enhance privacy techniques with adaptive noise addition and secure aggregation protocols.
             """)
 
+    # Tab 2 
+    with tabs[1]:
+        st.markdown("""
+        <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; text-align: center;">
+            <h2 style="color: #2c3e50; font-size: 28px;">📊 About the Model</h2>
+            <p style="color: #6c757d; font-size: 18px;">
+                Learn more about the model architecture, training process, and technologies used for privacy-preserving medical text analysis.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
 
-        # Tab 2: About the Model
-        with tabs[1]:
-            st.markdown("## About the Model")
+        # Collapsible Section: Key Features
+        with st.expander("📌 Key Features", expanded=True):
             st.markdown("""
-            This text classification model categorizes medical and non-medical text into predefined categories.
+            <ul style="font-size: 16px;">
+                <li><b>Architecture:</b> A feedforward neural network with three layers.</li>
+                <li><b>Preprocessing:</b> Vectorization and label encoding techniques applied.</li>
+                <li><b>Privacy Integration:</b> Differential privacy mechanisms safeguard sensitive data.</li>
+            </ul>
+            """, unsafe_allow_html=True)
 
-            ### Model Features:
-            - **Architecture:** A feedforward neural network with three layers.
-            - **Preprocessing:** Uses vectorization and label encoding.
-            - **Fallback Mechanism:** Includes heuristic-based classification for specific keywords.
-            
-            ### Technologies:
-            - **Libraries:** PyTorch, scikit-learn, and Streamlit.
-            - **Training:** Custom dataset trained for text classification tasks.
+        # Collapsible Section: Training Process
+        with st.expander("🔬 Training Process", expanded=False):
+            st.markdown("""
+            - **Training Dataset:** Curated dataset of medical and non-medical texts.
+            - **Batch Size:** 32 with early stopping to avoid overfitting.
+            - **Evaluation Metrics:** Accuracy, Precision, Recall, and F1-score.
             """)
 
-    # Tab 3: About Categories
-    with tabs[2]:
-        st.markdown("## About Categories")
-        st.markdown("""
-        Here are the predefined categories the model predicts:
-        - **Vaccines:** Texts related to vaccination campaigns, immunization, or vaccines.
-        - **Treatment:** Texts mentioning treatments, therapies, or medications.
-        - **Prevention:** Texts about measures like social distancing, mask usage, or hygiene.
-        - **Diagnostics:** Texts covering tests, imaging techniques, or diagnostic methods.
-        - **Epidemiology:** Texts discussing infection rates, disease spread, or studies.
-        - **Chronic Conditions:** Texts related to long-term diseases or health management.
-        - **Others:** General texts that do not fit into the above categories.
+        # Collapsible Section: Privacy Techniques
+        with st.expander("🛡️ Privacy-Preserving Techniques", expanded=False):
+            st.markdown("""
+            - **Federated Learning:** Trains models on decentralized data without sharing raw data between nodes.
+            - **Differential Privacy:** Adds Gaussian noise and applies L2 norm clipping to ensure compliance.
+            - **Data Anonymization:** Sensitive identifiers are removed or masked before processing.
+            """)
 
-        Please use the **Predict** tab to classify your input text!
-        """)
+        # Collapsible Section: Model Technologies
+        with st.expander("🔧 Model Technologies", expanded=False):
+            st.markdown("""
+            - **Libraries:** PyTorch, Scikit-learn, Streamlit.
+            - **Frameworks:** Flower for federated learning.
+            - **Embeddings:** Pre-trained embeddings like GloVe or Word2Vec.
+            """)
+
+        # Collapsible Section: Future Enhancements
+        with st.expander("🚀 Future Enhancements", expanded=False):
+            st.markdown("""
+            - Explore transformer-based architectures like BERT.
+            - Implement real-time prediction capabilities.
+            - Enhance privacy techniques with adaptive noise addition.
+            """)
+
+
+
+        #tab 3 About Categories
+        with tabs[2]:
+            # Header Section
+            st.markdown("""
+            <div style="background-color: #f1f7fc; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                <h2 style="color: #2c3e50; font-size: 28px;">📚 About Categories</h2>
+                <p style="color: #6c757d; font-size: 18px;">
+                    Explore the categories the model predicts and understand their significance in medical text analysis.
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+
+            # Introduction to Categories
+            st.markdown("""
+            <div style="padding-top: 20px;">
+                <p style="font-size: 16px; text-align: justify;">
+                    The model classifies medical and non-medical texts into predefined categories based on their content. These categories help in organizing medical research, improving accessibility, and deriving actionable insights.
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+
+            # Detailed Categories with Icons
+            st.markdown("<h3>Categories and their Descriptions</h3>", unsafe_allow_html=True)
+            categories = [
+                {
+                    "name": "Vaccines",
+                    "icon": "💉",
+                    "description": "Covers texts related to vaccination campaigns, immunization, or vaccines.",
+                    "example": "E.g., 'The new vaccine rollout has been highly effective.'",
+                },
+                {
+                    "name": "Treatment",
+                    "icon": "💊",
+                    "description": "Mentions treatments, therapies, or medications for various conditions.",
+                    "example": "E.g., 'The patient responded well to the new chemotherapy drug.'",
+                },
+                {
+                    "name": "Prevention",
+                    "icon": "🛡️",
+                    "description": "Texts about preventive measures like social distancing, mask usage, or hygiene.",
+                    "example": "E.g., 'Washing hands regularly helps prevent the spread of infections.'",
+                },
+                {
+                    "name": "Diagnostics",
+                    "icon": "🔬",
+                    "description": "Focuses on diagnostic methods like imaging, lab tests, and screenings.",
+                    "example": "E.g., 'MRI scans were used to detect early signs of the disease.'",
+                },
+                {
+                    "name": "Epidemiology",
+                    "icon": "📊",
+                    "description": "Covers studies on infection rates, disease spread, and public health trends.",
+                    "example": "E.g., 'The epidemiological data shows a steady decline in new cases.'",
+                },
+                {
+                    "name": "Chronic Conditions",
+                    "icon": "🩺",
+                    "description": "Related to long-term diseases or health management.",
+                    "example": "E.g., 'Diabetes management requires regular blood sugar monitoring.'",
+                },
+                {
+                    "name": "Others",
+                    "icon": "📁",
+                    "description": "General texts that do not fit into the above categories.",
+                    "example": "E.g., 'Medical conferences play a vital role in knowledge sharing.'",
+                },
+            ]
+
+            for category in categories:
+                with st.expander(f"{category['icon']} {category['name']}"):
+                    st.markdown(f"""
+                    - **Description:** {category['description']}
+                    - **Example:** {category['example']}
+                    """)
+
 
     # Tab 4: Health Check
     with tabs[3]:
